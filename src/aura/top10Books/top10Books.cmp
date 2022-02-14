@@ -1,0 +1,17 @@
+<!--
+ - Created by Kotletka on 24.10.2021.
+ -->
+
+<aura:component controller="TopBooksServices" description="TopBooks" implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute type="Book__c[]" name="acctList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.fetchBook}"/>
+
+    <lightning:datatable data="{! v.acctList }"
+                         columns="{! v.mycolumns }"
+                         keyField="id"
+                         hideCheckboxColumn="true"/>
+
+</aura:component>

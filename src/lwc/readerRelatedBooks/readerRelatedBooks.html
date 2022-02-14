@@ -1,0 +1,23 @@
+<!-- Reader Related Books -->
+
+
+<template>
+    <lightning-card title="Related Books" icon-name="standard:knowledge">
+        <div class="slds-m-around_medium">
+
+            <template if:true={list}>
+                <lightning-datatable data={list}
+                                     columns={columns}
+                                     key-field="Id"
+                                     hide-checkbox-column= "true"
+                                     show-row-number-column>
+                </lightning-datatable>
+
+                <lightning-button label="Refresh" onclick={showSuccessToast}></lightning-button>
+            </template>
+            <template if:true={error}>
+                {error}
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2198aeda-847c-4bbf-8fbe-33d164ca6c7e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../untitled4\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Apex Class" />
+        <option value="Lightning Web Component HTML" />
+        <option value="Lightning Web Component JavaScript" />
+        <option value="Lightning Web Component CSS" />
+        <option value="Lightning Application" />
+        <option value="Apex Metadata" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="moduleWorkspaceSettings">
+      <map>
+        <entry key="untitled4">
+          <value>
+            <ModuleWorkspaceSettings>
+              <option name="moduleContentsLastModified" value="1642426477529" />
+            </ModuleWorkspaceSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="body" value="List&lt;Study_Team_Member__c&gt; stmList = [SELECT Employee__c FROM Study_Team_Member__c WHERE Study__c ='a0I09000002IVCREA4' AND Active__c = TRUE];&#10;Set&lt;Id&gt; employeesIds= new Set&lt;Id&gt;();&#10;for(Study_Team_Member__c member: stmList){&#10;    employeesIds.add(member.Employee__c);&#10;}&#10;System.debug(employeesIds);&#10;System.debug([SELECT Name FROM Employee__c WHERE Id IN : employeesIds]);" />
+                  <option name="name" value="Anonymous Apex 1" />
+                </AnonymousApexSavedDocument>
+                <AnonymousApexSavedDocument>
+                  <option name="body" value="String sourceTable = 'Study_Team_Members__r';&#10;Id employeesIds = 'a0L09000003GVvKEAW';&#10;&#10;String query = 'SELECT Name, (SELECT Active__c, Start_Date__c FROM ' + sourceTable +') FROM Employee__c WHERE  Id = :employeesIds';&#10;&#10;&#10;&#10;&#10;&#10;System.debug([SELECT Name, (SELECT Active__c, Start_Date__c FROM Study_Team_Members__r) FROM Employee__c WHERE Id = :employeesIds]);" />
+                  <option name="name" value="Anonymous Apex 2" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+            <option name="selectedSavedDocumentIndex" value="1" />
+          </AnonymousApexSettings>
+        </option>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="MyOrg">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="APEXCLASS:EMPLOYEESCOMPONENTCONTROLLER" value="1644169657710" />
+                      <entry key="AURADEFINITIONBUNDLE:TEST" value="1644506876000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:BIKECARD" value="1643025345000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:COUNTRYTEAM" value="1644338727471" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:DATA" value="1643024316000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:DESTRUCTIVECHANGES.XML" value="1643023579000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:DETAIL" value="1643025476757" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:EMPLOYEES" value="1643553389980" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:EMPLOYEESCOMPONENT" value="1643029755996" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:LIST" value="1643024188000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:MYFIRSTWEBCOMPONENT" value="1643019780000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:READERRELATEDBOOKS" value="1642451368357" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SELECTOR" value="1643025672000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SITETEAM" value="1644338720446" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:STUDYTEAM" value="1644338715109" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TEAMEMPLOYEETABLE" value="1643190575000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TEAMS" value="1644338736563" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TEAMSITETABLE" value="1643190529000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TEST" value="1643023588000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TESTCOMPONENT" value="1643023590000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TILE" value="1643024221000" />
+                    </map>
+                  </option>
+                  <option name="lastBuildScope" value="CONTEXT" />
+                  <option name="lastBuildViewToggles">
+                    <map>
+                      <entry key="DEPLOY">
+                        <value>
+                          <BuildViewToggles>
+                            <option name="showLocalAndServer" value="true" />
+                            <option name="showLocalOnly" value="true" />
+                            <option name="showServerOnly" value="false" />
+                            <option name="showSubscribedByParent" value="true" />
+                            <option name="showSubscribedOnly" value="true" />
+                          </BuildViewToggles>
+                        </value>
+                      </entry>
+                    </map>
+                  </option>
+                  <option name="lastDeploymentOptions">
+                    <DeploymentOptions />
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="logAnalyzerSettings">
+          <LogAnalyzerSettings>
+            <option name="splitterProportion" value="0.49837133" />
+          </LogAnalyzerSettings>
+        </option>
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="savedDocuments">
+              <list>
+                <SoqlQuerySavedDocument>
+                  <option name="body" value="SELECT Employee__r.Name FROM Study_Team_Member__c WHERE Study__c = 'a0I09000002IVCREA4'" />
+                  <option name="name" value="SOQL Query 1" />
+                </SoqlQuerySavedDocument>
+                <SoqlQuerySavedDocument>
+                  <option name="body" value="SELECT  (SELECT Employee__r.Id FROM Study_Team_Members__r WHERE Study__c = 'a0I09000002IVCREA4') FROM Employee__c" />
+                  <option name="name" value="SOQL Query 2" />
+                </SoqlQuerySavedDocument>
+                <SoqlQuerySavedDocument>
+                  <option name="body" value="SELECT Name, (SELECT Active__c, Start_Date__c FROM Study_Team_Members__r) FROM Employee__c WHERE Id IN (SELECT Employee__c FROM Study_Team_Member__c WHERE Active__c = FALSE)" />
+                  <option name="name" value="SOQL Query 3" />
+                </SoqlQuerySavedDocument>
+              </list>
+            </option>
+            <option name="selectedSavedDocumentIndex" value="2" />
+          </SoqlQuerySettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23pMG8l63B8B2uHCKtmp4IHTGQ4" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Event Comms" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iryna.petrova\WebstormProjects\untitled4\src\lwc" />
+      <recent name="C:\Users\iryna.petrova\WebstormProjects\untitled4\src\lwc\bikeCard" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2198aeda-847c-4bbf-8fbe-33d164ca6c7e" name="Changes" comment="" />
+      <created>1642426477857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642426477857</updated>
+      <workItem from="1642426479958" duration="85000" />
+      <workItem from="1642426575704" duration="16262000" />
+      <workItem from="1642447587031" duration="2155000" />
+      <workItem from="1642451085381" duration="621000" />
+      <workItem from="1642504405685" duration="13636000" />
+      <workItem from="1642587735987" duration="1333000" />
+      <workItem from="1642682406839" duration="7399000" />
+      <workItem from="1642758625501" duration="2205000" />
+      <workItem from="1642966934727" duration="4761000" />
+      <workItem from="1643014499185" duration="14809000" />
+      <workItem from="1643104784477" duration="4269000" />
+      <workItem from="1643116415713" duration="1223000" />
+      <workItem from="1643123270894" duration="25736000" />
+      <workItem from="1643275412174" duration="23546000" />
+      <workItem from="1643617197723" duration="8171000" />
+      <workItem from="1643654504427" duration="68000" />
+      <workItem from="1643790026281" duration="25987000" />
+      <workItem from="1643978339596" duration="10871000" />
+      <workItem from="1644224776757" duration="2107000" />
+      <workItem from="1644226915614" duration="2610000" />
+      <workItem from="1644312376645" duration="6870000" />
+      <workItem from="1644489574101" duration="1299000" />
+      <workItem from="1644587073650" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

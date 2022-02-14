@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Employees">
+        <lightning-button label="Show Active"
+                          slot="actions"
+                          onclick={showActiveEmployees}>
+
+        </lightning-button>
+        <lightning-button label="Show All"
+                          slot="actions"
+                          onclick={showAllEmployees}>
+
+        </lightning-button>
+
+        <template if:true={list}>
+            <lightning-datatable
+                    key-field="Id"
+                    data={list}
+                    columns={columns}>
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            {error}
+        </template>
+    </lightning-card>
+
+
+
+</template>
